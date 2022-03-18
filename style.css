@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.card {
+  font-family: "Muli", sans-serif;
+  display: flex;
+  flex-direction: column;
+  border: rgb(179, 177, 177) solid 2px;
+  border-radius: 5%;
+  margin: auto;
+  background-color: white;
+  width: 70vw;
+}
+
+.form-control {
+  position: relative;
+  margin: 20px 0;
+}
+
+.form-control input.input {
+  border: 0;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #333;
+  padding: 15px 0;
+  font-size: 18px;
+  font-family: "Muli", sans-serif;
+  width: 100%;
+  transition: 0.1s ease-in;
+}
+.form-control input.input:focus,
+.form-control input.input:valid {
+  border-bottom-color: darksalmon;
+  outline: none;
+}
+
+.form-control input.input:focus + label span,
+.form-control input.input:valid + label span {
+  color: darksalmon;
+  transform: translateY(-30px);
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.form-control label.second {
+  position: absolute;
+  top: 178px;
+  left: 0;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.myButton {
+  background: linear-gradient(to bottom, #00e1ff 5%, #00e1ff 100%);
+  background-color: #f24537;
+  border-radius: 4px;
+  border: 1px solid #00e1ff;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 16px;
+  padding: 8px 47px;
+  margin-bottom: 60px;
+}
+.myButton:hover {
+  background: linear-gradient(to bottom, #223f9e 5%, #8b06e4 100%);
+  background-color: #0f5ae6;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+.card-title {
+  margin: 20px 20px 0px 20px;
+}
+.task-items {
+  margin: 0px 20px 20px 20px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  position: relative;
+  overflow-wrap: break-word;
+  border: 2px rgb(255, 255, 255) ridge;
+  border-radius: 5px;
+  margin: 1px 0px 1px 0px;
+  padding: 4px 0px 4px 3px;
+}
+a.delete-task {
+  position: absolute;
+  left: 100%;
+}
+li a.delete-task img {
+  width: 20px;
+}
+.clear-tasks {
+  background: #263544;
+  background-image: -webkit-linear-gradient(top, #263544, #172843);
+  background-image: -moz-linear-gradient(top, #263544, #172843);
+  background-image: -ms-linear-gradient(top, #263544, #172843);
+  background-image: -o-linear-gradient(top, #263544, #172843);
+  background-image: -webkit-gradient(to bottom, #263544, #172843);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 10px;
+  height: 22px;
+  color: #ffffff;
+  width: 149px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 30px 30px 30px;
+  margin-top: 20px;
+}
+
+.clear-tasks:hover {
+  border: solid #337fed 1px;
+  background: #bbbcbb;
+  background-image: -webkit-linear-gradient(top, #bbbcbb, #7953c7);
+  background-image: -moz-linear-gradient(top, #bbbcbb, #7953c7);
+  background-image: -ms-linear-gradient(top, #bbbcbb, #7953c7);
+  background-image: -o-linear-gradient(top, #bbbcbb, #7953c7);
+  background-image: -webkit-gradient(to bottom, #bbbcbb, #7953c7);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
